@@ -8,7 +8,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #ccc;
+    background-color: #E5E5E5;;
 }
 
 .clear {
@@ -18,11 +18,14 @@ body {
 /*********/
 
 .center {
-    padding: 25px 21px 25px 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    width: 50vw;
+    margin-top: 25px;
+    width: 49vw;
     background-color: #121826;
     border-radius: 20px 0 0 20px;
     float: left;
@@ -96,4 +99,119 @@ body {
     text-align: center;
     padding-left: 10px;
     font-size: 16px; 
+}
+
+.access-container {
+    width: 48.2vw;
+    height: 607px;
+    margin-right: -4px;
+    margin-top: 25px;
+    float: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFFFFF;
+    border-radius: 0 20px 20px 0;
+}
+
+.access-container .access-forms {
+    width: 431px;
+    height: 529px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #121826;
+    border-radius: 20px;
+}
+
+.access-container .access-forms #logo {
+    margin-top: 60px;
+    width: 150px;
+    height: 35px;
+}
+
+.access-container .access-forms .forms #sign {
+    text-align: center;
+    margin-top: 12px;
+    color: #FFFFFF;
+}
+
+.access-container .access-forms .forms #sign a {
+    color: #B1E457;
+    text-decoration: none;
+}
+
+.access-container .access-forms .forms #forgot {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.access-container .access-forms .forms #forgot a{
+    color: #B1E457;
+    text-decoration: none;
+}
+
+.access-container .access-forms .forms .access {
+    width: 300px;
+    height: 329px;
+    margin-top: 20px;
+    
+    background-color: #212936;
+    border-radius: 20px;
+}
+
+.access-container .access-forms .forms .access .login h2 {
+    text-align: center;
+    padding-top: 21px;
+    
+    font-size: 24px;
+    color: #B1E457;
+}
+
+.access-container .access-forms .forms .access .login h4 {
+    text-align: center;
+
+    font-size: 21px;
+    color: #6C727F;
+}
+
+.access-container .access-forms .forms .access .login input[type=email],
+.access-container .access-forms .forms .access .login input[type=password],
+.access-container .access-forms .forms .access .login input[type=submit] {
+    width: 280px;
+    height: 35px;
+    margin-left: 10px;
+    margin-top: 40px;
+    padding-left: 20px;
+
+    border: none;
+    border-radius: 40px;
+    outline: none;
+
+    background-color: #6C727F;
+    color: #FFFFFF;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.access-container .access-forms .forms .access .login input[type=password] {
+    margin-top: 20px;
+}
+
+.access-container .access-forms .forms .access .login input[type=submit] {
+    padding-left: 0;
+    margin-top: 60px;
+
+    background-color: #121826;
+    color: #6C727F;
+}
+
+.access-container .access-forms .forms .access .login input[type=email]::placeholder,
+.access-container .access-forms .forms .access .login input[type=password]::placeholder {
+    color: #FFFFFF;
 }
