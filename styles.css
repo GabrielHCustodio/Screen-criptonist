@@ -26,6 +26,7 @@ body {
 .container {
     margin-top: 25px;
     width: 49vw;
+    height: 607px;
     background-color: #121826;
     border-radius: 20px 0 0 20px;
     float: left;
@@ -43,10 +44,11 @@ body {
     margin: 66px 0 0 96px;
 }
 
-.container #login h3,
-.container #register h3 {
+.container #login h3 a,
+.container #register h3 a {
     font-size: 27px;
     color: #B1E457;
+    text-decoration: none;
 }
 
 .container #login p,
@@ -129,7 +131,7 @@ body {
 }
 
 .access-container .access-forms #logo {
-    margin-top: 60px;
+    margin-top: 30px;
     width: 150px;
     height: 35px;
 }
@@ -157,13 +159,14 @@ body {
 
 .access-container .access-forms .forms .access {
     width: 300px;
-    height: 329px;
+    height: 379px;
     margin-top: 20px;
     
     background-color: #212936;
     border-radius: 20px;
 }
 
+/*** TELA DE LOGIN ***/
 .access-container .access-forms .forms .access .login h2 {
     text-align: center;
     padding-top: 21px;
@@ -213,5 +216,70 @@ body {
 
 .access-container .access-forms .forms .access .login input[type=email]::placeholder,
 .access-container .access-forms .forms .access .login input[type=password]::placeholder {
+    color: #FFFFFF;
+}
+
+/*** TELA DE CADASTRO ***/
+
+.access-container .access-forms .forms .access .register h2 {
+    text-align: center;
+    padding-top: 21px;
+    
+    font-size: 24px;
+    color: #B1E457;
+}
+
+.access-container .access-forms .forms .access .register input[type=text],
+.access-container .access-forms .forms .access .register input[type=email],
+.access-container .access-forms .forms .access .register input[type=password],
+.access-container .access-forms .forms .access .register input[type=submit] {
+    width: 280px;
+    height: 35px;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-left: 20px;
+
+    border: none;
+    border-radius: 40px;
+    outline: none;
+
+    background-color: #6C727F;
+    color: #FFFFFF;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.access-container .access-forms .forms .access .register input[type=checkbox] {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.access-container .access-forms .forms .access .register #check {
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.access-container .access-forms .forms .access .register #check a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #B1E457;
+}
+
+.access-container .access-forms .forms .access .register input[type=password] {
+    margin-top: 20px;
+}
+
+.access-container .access-forms .forms .access .register input[type=submit] {
+    padding-left: 0;
+    margin-top: 20px;
+
+    background-color: #B1E457;
+    color: #212936;
+}
+
+.access-container .access-forms .forms .access .register input[type=text]::placeholder,
+.access-container .access-forms .forms .access .register input[type=email]::placeholder,
+.access-container .access-forms .forms .access .register input[type=password]::placeholder {
     color: #FFFFFF;
 }
