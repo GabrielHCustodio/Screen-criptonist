@@ -16,13 +16,13 @@
             <img id="image" src="./assets/Frame.png" alt="logo">
 
             <div id="login">
-                <h3>Login page</h3>
+                <h3><a href="">Login page</a></h3>
                 <p>Empty form, filled form, validation error form</p>
             </div>
             <!--login-->
 
             <div id="register">
-                <h3>Register page</h3>
+                <h3><a href="">Register page</a></h3>
                 <p>Empty form, filled form, validation error form, success page</p>
             </div>
             <!--register-->
@@ -46,21 +46,26 @@
                 <img src="./assets/Frame.png" alt="logo" id="logo">
 
                 <div class="forms">
-                    <div class="access">
-                        <div class="login">
-                            <h2>Welcome back!</h2>
-                            <h4>Sign in to your account</h4>
 
-                            <input type="email" placeholder="Email"> <br>
-                            <input type="password" placeholder="Password"> <br>
-                            <input type="submit" value="Login">
+                    <div class="access">
+                        <div class="register">
+                            <h2>Create a Criptonist Account</h2>
+
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Confirm password">
+                            <input type="checkbox" name="check">
+                            <label for="check" id="check"> I agree to the <a href=""> Terms of Service</a> and <a href=""> Privacy Policy</a></label>
+
+                            <input type="submit" value="Sign in">
                         </div>
-                        <!--login-->
+                        <!--register-->
                     </div>
                     <!--access-->
 
-                    <p id="sign">Don`t have an account? <a href="">Sign up</a></p>
-                    <p id="forgot"><a href="">Forgot password?</a></p>
+                    <p id="sign">Already have an account?<a href="">  Login</a></p>
+
                 </div>
                <!--forms-->
             </div>
