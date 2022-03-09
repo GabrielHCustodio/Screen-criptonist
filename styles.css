@@ -289,3 +289,49 @@ body {
 .access-container .access-forms .forms .access .register input[type=password]::placeholder {
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 1020px) {
+    .container .contact {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: flex-start;
+    }
+
+    .container .contact #message {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .center {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container,
+    .access-container {
+        width: 90%;
+        height: 100%;
+        padding: 25px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .container #image,
+    .container #login,
+    .container #register {
+        margin-left: 0;
+    }
+
+    .container .contact {
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .container .contact #message {
+        margin-left: 20px;
+    }
+}
